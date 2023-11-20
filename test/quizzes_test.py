@@ -14,6 +14,12 @@ class QuizzesTest(unittest.TestCase):
         execute the code and make it fail.
         """
         self.assertTrue(True, 'Example assertion.')
+
+    def test_expose_failure_02(self):
+        self.assertTrue(False)
+
+    def test_expose_failure_03(self):
+        self.assertTrue(False)   
         
 
 if __name__ == '__main__':
