@@ -1,4 +1,11 @@
 
+# Includes all modules in this project.
+import sys
+import os
+app_path = os.path.abspath(os.path.join(os.path.dirname(__file__),'..'))
+sys.path.insert(0, app_path)
+base_path = os.path.join(app_path, '..')
+sys.path.insert(0, base_path)
 
 from flask import Flask
 from api import controller
